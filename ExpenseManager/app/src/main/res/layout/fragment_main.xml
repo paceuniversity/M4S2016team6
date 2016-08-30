@@ -9,12 +9,98 @@
     tools:context="com.example.evelyne_ines.expensemanager.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
-    <ImageView android:id="@+id/splashscreen" android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:src="@drawable/logo2"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:elevation="100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solde:"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dépenses:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:text="150 000 FCFA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignEnd="@+id/textView8"
+        android:text="50 000 FCFA" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="210dp">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:text="Dépenses"
+            android:id="@+id/button"
+            android:background="#E91E63"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_marginBottom="93dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:text="Aide-Achats"
+            android:id="@+id/button3"
+            android:background="#54C242"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/linearLayout2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:text="Objectifs"
+            android:id="@+id/button4"
+            android:background="#F56F16"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:text="Revenus"
+            android:id="@+id/button2"
+            android:background="#4474C2"
+            android:layout_alignTop="@+id/button"
+            android:layout_toEndOf="@+id/button3" />
+
+    </LinearLayout>
+
+
+
 
 
 </RelativeLayout>

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 public class MenuActivityFragment extends Fragment {
 
     public MenuActivityFragment() {
+
     }
 
     @Override
